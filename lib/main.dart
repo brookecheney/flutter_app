@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Cognuro - Flutter/Dart Code Sample'),
+          title: Text('Cognuro Flutter/Dart Code Sample'),
         ),
         body: Column(
           children: [
