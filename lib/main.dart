@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Cognuro'),
+          title: Text('Cognuro Code Sample'),
         ),
         body: Column(
           children: [
@@ -24,11 +24,14 @@ class MyApp extends StatelessWidget {
             ),
             ElevatedButton(
               child: Text('Answer 1'),
-              onPressed: answerQuestion,
+              onPressed: () => print('Answer 2 chosen!'),
             ),
             ElevatedButton(
               child: Text('Answer 1'),
-              onPressed: answerQuestion,
+              onPressed: () {
+                //...
+                print('Answer 3 chosen!');
+              },
             ),
           ],
         ),
