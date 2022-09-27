@@ -121,11 +121,13 @@ String dropdownValue = "Male";
                         dropdownValue = newValue;
                       });
                     },
-                    validator: (String value) {
-                      if (value?.isEmpty ?? true) {
-                        return 'Please enter your gender';
+                        validator: (String value) {
+                      if (value.isEmpty) {
+                        return 'Enter your Gender';
                       }
+                      return null;
                     },
+           
                     items: typeNeg
                         .map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
@@ -149,6 +151,12 @@ String dropdownValue = "Male";
                 onFieldSubmitted: (value) {
                   //Validator
                 },
+                      validator: (String value) {
+                      if (value.isEmpty) {
+                        return 'Enter the description';
+                      }
+                      return null;
+                    },
            
           
      
